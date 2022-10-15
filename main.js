@@ -21,7 +21,7 @@ canvas.add(hole_obj);
 new_image();
 }
 
-function load_img(){
+function new_img(){
 fabric.Image.fronURL("ball.png", function(Img){ 
 ball_obj=Img;
 ball_obj.scaleToWidth(50);
