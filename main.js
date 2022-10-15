@@ -22,7 +22,7 @@ new_image();
 }
 
 function new_img(){
-fabric.Image.fronURL("ball.png", function(Img){ 
+fabric.Image.fromURL("ball.png", function(Img){ 
 ball_obj=Img;
 ball_obj.scaleToWidth(50);
 ball_obj.scaleToHeight(50);
@@ -43,7 +43,7 @@ function my_keydown(e)
 	if((ball_x==hole_x)&&(ball_y==ball_x)){
 		canvas.remove(ball_obj);
 		document.getElementById("hd3").innerHTML="You Have Hit the Goal!!!";
-		document.getElementById("myCanvas").style.borderColor="red";
+		document.getElementById("myCanvas").style.borderColor="red";}
 	else{
 		if(keyPressed == '38')
 		{
